@@ -1,0 +1,70 @@
+:root {
+  --dark-blue: #336699;
+}
+
+html body {
+  background-color: #86bbd8;
+}
+
+.max-height {
+  min-height: 100vh;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding-bottom: 0.3rem;
+}
+
+.card-title {
+  background-color: var(--dark-blue);
+  color: #fff;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.form-select {
+  font-size: 1.2rem !important;
+  padding: 0.5rem !important;
+}
+
+.form-control {
+  font-size: 1.2rem !important;
+  padding: 1.3rem !important;
+}
+
+.input-group-text {
+  background-color: var(--dark-blue) !important;
+  color: #fff !important;
+}
+
+.btn {
+  background-color: var(--dark-blue) !important;
+  font-size: 1.2rem !important;
+  color: #fff !important;
+}
+
+.btn:hover {
+  background-color: #86bbd8 !important;
+  color: #000 !important;
+}
+
+.loader {
+  display: none;
+  padding: 0.5rem 0 1rem;
+}
+
+#gif {
+  width: 60%;
+  height: auto;
+}
+
+.result {
+  display: none;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
+
+.show {
+  display: block;
+}

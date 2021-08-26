@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row max-height align-items-center">
+      <div class="col-10 mx-auto col-md-8">
+        <div class="card">
+          <div class="card-title">
+            <h3 class="p-2 text-center text-uppercase">Tip Calculator</h3>
+          </div>
+
+          <div class="card-body">
+            <div class="feedback d-flex flex-column align-items-center text-capitalize"></div>
+            <form id="tip-form">
+              <div class="my-4">
+                <h5 class="mb-2">How Much Was Your Bill?</h5>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-dollar-sign fa-fw"></i></span>
+                  </div>
+                  <input type="number" name="bill" class="form-control form-control lg" step=".01" id="input-bill" />
+                </div>
+              </div>
+              <div class="my-4">
+                <h5 class="mb-2">How Many People Are Sharing The Bill?</h5>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
+                  </div>
+                  <input type="number" name="sharing" class="form-control form-control lg" id="input-users" />
+                </div>
+              </div>
+              <div class="my-4">
+                <h5 class="mb-2">How Was Your Service?</h5>
+                <div class="input-group">
+                  <select class="form-select w-100">
+                    <option selected class="choose" value="">
+                      Choose...
+                    </option>
+                    <option value="20">Great - 20%</option>
+                    <option value="10">Good - 10%</option>
+                    <option value="2">Bad - 2%</option>
+                  </select>
+                </div>
+              </div>
+              <input type="submit" name="submit" class="btn submitBtn d-block w-75 mx-auto" value="Calculate" />
+            </form>
+          </div>
+
+          <div class="loader text-center">
+            <img src="https://i.gifer.com/YVPG.gif" id="gif" alt="loading" />
+          </div>
+
+          <div class="result mx-auto text-center w-60">
+            <div id="result-tip"></div>
+            <div id="result-total"></div>
+            <div id="result-each-owes"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
