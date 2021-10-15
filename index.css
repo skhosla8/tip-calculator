@@ -7,7 +7,7 @@ html body {
 }
 
 .max-height {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .card {
@@ -67,4 +67,10 @@ html body {
 
 .show {
   display: block;
+}
+
+@media (max-width: 500px) {
+  .result {
+    font-size: 1.2rem !important;
+  }
 }
